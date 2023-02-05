@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Styling -CSS</title>
+    <style type="text/css">
+        #s{
+            background-color: rgb(170, 91, 91);
+            padding-bottom: 2%;
+            padding-top: 2%;
+            margin: 1%;
+        }
+        *{
+            text-align: center;
+        }
+        table{
+            margin-left: 40%;
+            border-style: solid;
+            border-color:rgb(223, 229, 194);
+        }
+        ul{
+            position: relative; 
+            display: inline-block; 
+        }
+        #a{
+            border-style: solid;
+            border-width: 1px;
+            margin-left: 450px;
+            margin-right: 450px;
+            border-color: rgb(95, 139, 141);
+            border-radius: 10px;
+        }
+        button{
+            margin-bottom: 50px;
+            padding-left: 40%;
+            padding-right: 40%;
+            background-color: rgb(215, 235, 128);
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 10px;
+            border-color: rgb(73, 28, 66);
+        }
+        input{
+            padding-left: 83px;
+            padding-right: 83px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: rgb(163, 194, 173);
+            border-radius: 10px;
+            border-color: rgb(38, 112, 102);
+        }
+        label{
+            position: absolute;
+            left: 490px;
+            color: rgb(54, 23, 23);
+        }
+        h1{
+            color: rgb(26, 70, 46);
+        }
+        #first{
+            background-color: rgb(165, 159, 70);
+        }
+        #second{
+            background-color: rgba(221, 181, 69, 0.384);
+        }
+        h2{
+            color: rgb(33, 49, 78);
+        }
+        ul{
+            color: rgb(168, 82, 82);
+        }
+        #front{
+            background-color: rgb(151, 118, 77);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div id="front">
+                <nav id="navigationPannel">
+                    <h1 id="title">WEB PAGE STYLING WITH CSS</h1>
+                    <p id="description">Each icon has its own navigation link, it can be moved to different web pages</p>
+                    <h3>CSS Of webPages</h3>
+                    <ul id="lists">
+                    <a href="#login-heading" id="login"><img src="data:image/png;base64,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" width="10px" height="10px"></a>
+                    <a href="#table-headings" id="table"><img src="https://static.vecteezy.com/system/resources/previews/010/160/301/original/calendar-icon-sign-symbol-design-free-png.png" width="10px" height="10px"></a>
+                    <a href="#t" id="image"><img src="data:image/jpeg;base64,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" width="40px" height="20px"></a>
+                    <a href="#frameHeading" id="frames"><img src="https://www.pngitem.com/pimgs/m/463-4639238_blue-computer-icon-icon-hd-png-download.png" width="10px" height="10px"></a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="s">
+                    <div id="a">
+                        <h1 id="login-heading"> LOGIN </h1>
+                    <form>
+                        <label id="fname"> Name : </label><br><input type="text" Name="uname"><br><br>
+                        <label> Email : </label><br><input type="email" Name="mail"><br><br>
+                        <label> Password : </label><br><input type="password" Name="pwd"><br><br>
+                        <button id="submit_btn" onclick="sub()"> SUBMIT </button>
+                        </form>
+                    </div>
+            </div>
+            <div id="s">
+                <h1 id="table-headings"> TABLES AND LIST </h1>
+                <table id="courseTable" border="1px">
+                <tr id="first"><td>Roll No</td><td>Name</td><td>Course</td><td>Department</td></tr>
+                <tr id="second"><td>1</td><td>abc1</td><td>information technology</td><td>IT</td></tr>
+                <tr id="first"><td>02</td><td>abc2</td><td>information technoloy</td><td>IT</td></tr>
+                <tr id="second"><td>03</td><td>abc3</td><td>information technology</td><td>IT</td></tr>
+                <tr id="first"><td>04</td><td>abc4</td><td>information technology</td><td>IT</td></tr>
+                <tr id="second"><td>05</td><td>abc5</td><td>information technology</td><td>IT</td></tr>
+                <tr id="first"><td>06</td><td>abc6</td><td>information technology</td><td>IT</td></tr>
+                </table>
+                            <h2 id="courseHeading"> NO OF COURSES AVAILABLE</h2>
+                <ul id="courseList">
+                    <li id="courseList">INFORMATION TECHNOLOGY</li>
+                    <li id="courseList">COMPUTERSCIENCE</li>
+                    <li id="courseList">CIVIL</li>
+                    <li id="courseList">MECHANICAL</li>
+                    <li id="courseList">ARTIFICIAL INTELLIGENCE</li>
+                </ul>
+            </div>
+            <div id="s">
+                <h1 id="t"> Image Map </h1>
+                <img src="https://cdn.pixabay.com/photo/2019/04/25/21/43/laptop-4156012_960_720.jpg"width=25%>
+                <map name="workmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+                </map>
+            </div>
+            <div>
+            </div>
+            <div id="s">
+                <h1 id="frameHeading"> FRAMES IN HTML </h1>
+                    <iframe id="frameImage1" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGUlMjBsYXB0b3B8ZW58MHx8MHx8&w=1000&q=80"width=20%></iframe>
+                    <iframe id="frameImage2" src="https://imageio.forbes.com/specials-images/imageserve/6213c2a05ed1f7de596d35b4/Izmir--Turkey---Half-opened-Apple-Macbook-pro-laptop-computer-with-purple-and-blue/960x0.jpg?format=jpg&width=960"width=20%></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

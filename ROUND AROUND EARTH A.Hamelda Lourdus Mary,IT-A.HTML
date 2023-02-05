@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+
+  background-image: url("https://www.travelandleisure.com/thmb/g0a9WvCvukBZ46vsAvJw6fOdwxM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caribbean-from-space-station-NASAISSPHOTOS0121-7987207d34d946fa82b66568fcebafbf.jpg");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: rgb(87, 87, 219);
+}
+
+
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #cabde9;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(39, 65, 120);
+  outline: none;
+}
+
+
+.btn {
+  background-color: #0c1f5c;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<title>Round the earth</title>
+<div class="bg-img">
+    
+
+<img id="backgroundImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA70sU9JCx-c9YlyYNhJqkHMxGKNbIjNCvPpWSuuVQ3qZLbjsdsEOL37vI7tN0mX5dfCs&usqp=CAU">
+  <form id="departure" action="/action_page.php" class="container">
+    <h1 id="heading"><b>ROCKET AROUND THE EARTH</b></h1>
+    
+    <label id="dropDown" for="dropDown">Departure country</label><br>
+    
+    <select name="dropDown" id="dropDown">
+      
+      <option id="dropDown" value="india">INDIA</option>
+      <option id="dropDown" value="uk">UK</option>
+      <option id="dropDown" value="us">US</option>
+      <option id="dropDown" value="australia">CANADA</option>
+    </select>
+    
+    <label for="no of space travellers">No of travellers</label>
+<input type="text" id="noOfTravellers" placeholder="Enter number of travellers"></input>
+    <label  id="email" for="email">Your Email</label>
+    <input type="text" value="default" placeholder="Enter Email" name="email" required>
+<p id="yesOrNo>
+   <label for="yesOrNo">Do you wanna rent a space suit</label><br>
+   <input name="yesOrNotype="radio" id="yesOrNo">Yes,Please</input><br>
+   <input name="yesOrNotype="radio" >No,I have my own</input><br>
+   </p>
+    <button type="submit" id="submit" class="btn">Take us to space</button>
+  </form>
+</div>
+</body>
+</html>
